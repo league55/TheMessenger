@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/menu/menu_file_picker.xml",
+        "source": "/home/mixmax/AndroidStudioProjects/messenger/app/src/main/res/menu/menu_file_picker.xml"
+    },
+    {
+        "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/home/mixmax/AndroidStudioProjects/messenger/app/src/main/res/menu/menu_main.xml"
+    }
+]
