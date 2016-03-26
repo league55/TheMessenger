@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.vk.santa.Messenger;
+package com.vk.santa.messenger;
 
 public final class R {
     public static final class anim {
@@ -2249,10 +2249,10 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0c0017;
         public static final int expand_activities_button=0x7f0c003e;
         public static final int expanded_menu=0x7f0c0051;
-        public static final int fileLink=0x7f0c006c;
+        public static final int file_path_tv=0x7f0c006c;
         public static final int filename=0x7f0c0075;
         public static final int files_frag_placeholder=0x7f0c006a;
-        public static final int files_listView=0x7f0c0076;
+        public static final int files_recycler=0x7f0c0076;
         public static final int fill=0x7f0c002d;
         public static final int fill_horizontal=0x7f0c002e;
         public static final int fill_vertical=0x7f0c0021;
@@ -2833,7 +2833,7 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f0100be
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#background}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2843,7 +2843,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2855,7 +2855,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2867,7 +2867,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2883,7 +2883,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2899,7 +2899,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2915,7 +2915,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2931,7 +2931,7 @@ containing a value of this type.
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2941,7 +2941,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2963,7 +2963,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2973,7 +2973,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2989,7 +2989,7 @@ containing a value of this type.
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#height}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3005,7 +3005,7 @@ containing a value of this type.
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3019,7 +3019,7 @@ containing a value of this type.
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3029,7 +3029,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3039,7 +3039,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3049,7 +3049,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3059,7 +3059,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3075,7 +3075,7 @@ containing a value of this type.
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3085,7 +3085,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3103,7 +3103,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3113,7 +3113,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3129,7 +3129,7 @@ containing a value of this type.
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3139,7 +3139,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3153,7 +3153,7 @@ containing a value of this type.
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3163,7 +3163,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3177,7 +3177,7 @@ containing a value of this type.
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3254,7 +3254,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#background}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3264,7 +3264,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3276,7 +3276,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3286,7 +3286,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#height}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3302,7 +3302,7 @@ containing a value of this type.
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3312,7 +3312,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3337,7 +3337,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3347,7 +3347,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3391,7 +3391,7 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -3401,7 +3401,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -3411,7 +3411,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -3421,7 +3421,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -3431,7 +3431,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -3464,7 +3464,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3480,7 +3480,7 @@ containing a value of this type.
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3509,7 +3509,7 @@ containing a value of this type.
             0x7f010025, 0x7f010026
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -3529,7 +3529,7 @@ containing a value of this type.
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -3560,7 +3560,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -3584,7 +3584,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010028
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -3613,7 +3613,7 @@ containing a value of this type.
             0x7f010029, 0x7f01002a
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -3631,7 +3631,7 @@ containing a value of this type.
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -3687,7 +3687,7 @@ containing a value of this type.
             0x7f010036, 0x7f010037
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3712,7 +3712,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3722,7 +3722,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3737,7 +3737,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3762,7 +3762,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3778,7 +3778,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3794,7 +3794,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3810,7 +3810,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3826,7 +3826,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3842,7 +3842,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3852,7 +3852,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3867,7 +3867,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3881,7 +3881,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3895,7 +3895,7 @@ containing a value of this type.
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -3928,7 +3928,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -3943,7 +3943,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -3978,7 +3978,7 @@ containing a value of this type.
             0x7f01003a, 0x7f01003b
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
@@ -3988,7 +3988,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
@@ -4026,7 +4026,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4036,7 +4036,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4065,7 +4065,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4079,7 +4079,7 @@ containing a value of this type.
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4121,7 +4121,7 @@ containing a value of this type.
             0x7f010044, 0x7f010045, 0x7f010046, 0x7f010047
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4137,7 +4137,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4153,7 +4153,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4169,7 +4169,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#color}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4184,7 +4184,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4200,7 +4200,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4216,7 +4216,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4230,7 +4230,7 @@ containing a value of this type.
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4272,7 +4272,7 @@ containing a value of this type.
             0x7f01004b, 0x7f01010e, 0x7f01010f
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4287,7 +4287,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4307,7 +4307,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4323,7 +4323,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4339,7 +4339,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4356,7 +4356,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4372,7 +4372,7 @@ containing a value of this type.
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4416,7 +4416,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -4491,7 +4491,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4501,7 +4501,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4517,7 +4517,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4531,7 +4531,7 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4729,7 +4729,7 @@ containing a value of this type.
             0x7f010053
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4739,7 +4739,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4753,7 +4753,7 @@ containing a value of this type.
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4845,7 +4845,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -4935,7 +4935,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -5000,7 +5000,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5016,7 +5016,7 @@ containing a value of this type.
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5026,7 +5026,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5036,7 +5036,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5051,7 +5051,7 @@ containing a value of this type.
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5061,7 +5061,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5076,7 +5076,7 @@ containing a value of this type.
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5107,7 +5107,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -5134,7 +5134,7 @@ containing a value of this type.
             0x7f01005c
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -5176,7 +5176,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5190,7 +5190,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5204,7 +5204,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5218,7 +5218,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5245,7 +5245,7 @@ containing a value of this type.
             0x7f010061
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -5270,7 +5270,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010062
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -5359,7 +5359,7 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5369,7 +5369,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5379,7 +5379,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5393,7 +5393,7 @@ containing a value of this type.
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5403,7 +5403,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5417,7 +5417,7 @@ containing a value of this type.
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5427,7 +5427,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5437,7 +5437,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5451,7 +5451,7 @@ containing a value of this type.
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5461,7 +5461,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5471,7 +5471,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5481,7 +5481,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5491,7 +5491,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5524,7 +5524,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5540,7 +5540,7 @@ containing a value of this type.
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5593,7 +5593,7 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -5654,7 +5654,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5668,7 +5668,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5682,7 +5682,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5698,7 +5698,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5714,7 +5714,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5724,7 +5724,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5740,7 +5740,7 @@ containing a value of this type.
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#track}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -5796,7 +5796,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010084, 0x7f010085, 0x7f010086, 0x7f010087
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5806,7 +5806,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5822,7 +5822,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5839,7 +5839,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5854,7 +5854,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5870,7 +5870,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5886,7 +5886,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5902,7 +5902,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5919,7 +5919,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5935,7 +5935,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5951,7 +5951,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5967,7 +5967,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5983,7 +5983,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -5999,7 +5999,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6014,7 +6014,7 @@ containing a value of this type.
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6024,7 +6024,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6118,7 +6118,7 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
@@ -6174,7 +6174,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6188,7 +6188,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_counterEnabled = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6202,7 +6202,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_counterMaxLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6212,7 +6212,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6222,7 +6222,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_counterTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6236,7 +6236,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_errorEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6246,7 +6246,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_errorTextAppearance = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6260,7 +6260,7 @@ containing a value of this type.
         */
         public static final int TextInputLayout_hintAnimationEnabled = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6528,7 +6528,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100fa, 0x7f0100fb
         };
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6538,7 +6538,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6548,7 +6548,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6558,7 +6558,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6582,7 +6582,7 @@ containing a value of this type.
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6592,7 +6592,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6602,7 +6602,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6612,7 +6612,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6622,7 +6622,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6632,7 +6632,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6642,7 +6642,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6652,7 +6652,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6662,7 +6662,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6672,7 +6672,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6682,7 +6682,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6694,7 +6694,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6704,7 +6704,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6714,7 +6714,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6724,7 +6724,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6734,7 +6734,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6744,7 +6744,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6754,7 +6754,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6764,7 +6764,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6774,7 +6774,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6784,7 +6784,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6794,7 +6794,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6804,7 +6804,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6814,7 +6814,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6824,7 +6824,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6834,7 +6834,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6844,7 +6844,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6854,7 +6854,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6864,7 +6864,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6878,7 +6878,7 @@ containing a value of this type.
         */
         public static final int Theme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6888,7 +6888,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6910,7 +6910,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6920,7 +6920,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6930,7 +6930,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6940,7 +6940,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6950,7 +6950,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6960,7 +6960,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6970,7 +6970,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6980,7 +6980,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6990,7 +6990,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7000,7 +7000,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7010,7 +7010,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7020,7 +7020,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7035,7 +7035,7 @@ containing a value of this type.
         */
         public static final int Theme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7050,7 +7050,7 @@ containing a value of this type.
         */
         public static final int Theme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7065,7 +7065,7 @@ containing a value of this type.
         */
         public static final int Theme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7080,7 +7080,7 @@ containing a value of this type.
         */
         public static final int Theme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7095,7 +7095,7 @@ containing a value of this type.
         */
         public static final int Theme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7110,7 +7110,7 @@ containing a value of this type.
         */
         public static final int Theme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7125,7 +7125,7 @@ containing a value of this type.
         */
         public static final int Theme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7140,7 +7140,7 @@ containing a value of this type.
         */
         public static final int Theme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7150,7 +7150,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7166,7 +7166,7 @@ containing a value of this type.
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7176,7 +7176,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7186,7 +7186,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7196,7 +7196,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7206,7 +7206,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7222,7 +7222,7 @@ containing a value of this type.
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7232,7 +7232,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7244,7 +7244,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7254,7 +7254,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7264,7 +7264,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7274,7 +7274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7284,7 +7284,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7294,7 +7294,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7304,7 +7304,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7320,7 +7320,7 @@ containing a value of this type.
         */
         public static final int Theme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7336,7 +7336,7 @@ containing a value of this type.
         */
         public static final int Theme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7352,7 +7352,7 @@ containing a value of this type.
         */
         public static final int Theme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7368,7 +7368,7 @@ containing a value of this type.
         */
         public static final int Theme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7384,7 +7384,7 @@ containing a value of this type.
         */
         public static final int Theme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7394,7 +7394,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7404,7 +7404,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7420,7 +7420,7 @@ containing a value of this type.
         */
         public static final int Theme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7430,7 +7430,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7440,7 +7440,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7450,7 +7450,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7460,7 +7460,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7470,7 +7470,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7480,7 +7480,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_seekBarStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7490,7 +7490,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7500,7 +7500,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7510,7 +7510,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7520,7 +7520,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_spinnerStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7530,7 +7530,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_switchStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7540,7 +7540,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7550,7 +7550,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7560,7 +7560,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7570,7 +7570,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7580,7 +7580,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7590,7 +7590,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7602,7 +7602,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7614,7 +7614,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7624,7 +7624,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7634,7 +7634,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7648,7 +7648,7 @@ containing a value of this type.
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7662,7 +7662,7 @@ containing a value of this type.
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7676,7 +7676,7 @@ containing a value of this type.
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7695,7 +7695,7 @@ containing a value of this type.
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7714,7 +7714,7 @@ containing a value of this type.
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7733,7 +7733,7 @@ containing a value of this type.
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7752,7 +7752,7 @@ containing a value of this type.
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7771,7 +7771,7 @@ containing a value of this type.
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7790,7 +7790,7 @@ containing a value of this type.
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7883,7 +7883,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7897,7 +7897,7 @@ containing a value of this type.
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7907,7 +7907,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7923,7 +7923,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7939,7 +7939,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7955,7 +7955,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7971,7 +7971,7 @@ containing a value of this type.
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7981,7 +7981,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -7995,7 +7995,7 @@ containing a value of this type.
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8011,7 +8011,7 @@ containing a value of this type.
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8025,7 +8025,7 @@ containing a value of this type.
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8035,7 +8035,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8045,7 +8045,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8059,7 +8059,7 @@ containing a value of this type.
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8069,7 +8069,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8084,7 +8084,7 @@ containing a value of this type.
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8098,7 +8098,7 @@ containing a value of this type.
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8114,7 +8114,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8130,7 +8130,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8146,7 +8146,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8162,7 +8162,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8178,7 +8178,7 @@ containing a value of this type.
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8188,7 +8188,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8237,7 +8237,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8253,7 +8253,7 @@ containing a value of this type.
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8269,7 +8269,7 @@ containing a value of this type.
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8302,7 +8302,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -8317,7 +8317,7 @@ containing a value of this type.
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.vk.santa.Messenger.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.vk.santa.messenger.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 

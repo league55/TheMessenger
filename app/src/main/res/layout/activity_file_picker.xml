@@ -21,9 +21,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--  <include layout="@layout/content_file_picker"/>
-    -->
-
 
     <FrameLayout
         android:id="@+id/files_frag_placeholder"

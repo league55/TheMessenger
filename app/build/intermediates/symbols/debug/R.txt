@@ -603,10 +603,10 @@ int id enterAlwaysCollapsed 0x7f0c0016
 int id exitUntilCollapsed 0x7f0c0017
 int id expand_activities_button 0x7f0c003e
 int id expanded_menu 0x7f0c0051
-int id fileLink 0x7f0c006c
+int id file_path_tv 0x7f0c006c
 int id filename 0x7f0c0075
 int id files_frag_placeholder 0x7f0c006a
-int id files_listView 0x7f0c0076
+int id files_recycler 0x7f0c0076
 int id fill 0x7f0c002d
 int id fill_horizontal 0x7f0c002e
 int id fill_vertical 0x7f0c0021

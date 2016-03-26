@@ -8,7 +8,7 @@ public class FilePickerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.vk.santa.Messenger.R.layout.activity_file_picker);
+        setContentView(R.layout.activity_file_picker);
     }
 
 }
