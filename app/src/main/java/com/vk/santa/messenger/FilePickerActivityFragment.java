@@ -67,7 +67,10 @@ public class FilePickerActivityFragment extends Fragment {
                     Log.i("File picker", "Path" + newFolderPath);
                     FragmentManager fm = getActivity().getSupportFragmentManager();
                     Fragment fragment = newInstance(newFolderPath);
-                    fm.beginTransaction().addToBackStack(null).replace(R.id.files_frag_placeholder, fragment).commit();
+                    fm.beginTransaction()
+                            .addToBackStack(null)
+                            .replace(R.id.file_picker_relative_l, fragment)
+                            .commit();
                 }
             }
         });
