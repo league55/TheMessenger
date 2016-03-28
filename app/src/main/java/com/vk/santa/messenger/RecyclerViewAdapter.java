@@ -6,7 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -14,12 +21,23 @@ import java.util.List;
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    OnItemClickListener listener;
-    private List<File> files;
+    public static final int BY_NAME = 0;
+    public static final int BY_SIZE = 1;
+    public static final int BY_DATE = 2;
 
-    public RecyclerViewAdapter(List<File> files, OnItemClickListener listener) {
-        this.files = files;
+    private OnFileClickListener listener;
+    private List<File> files;
+    private int sortingBy = 0;
+
+    Date date = new Date();
+    SimpleDateFormat df = new SimpleDateFormat("dd/mm/yy");
+
+    public RecyclerViewAdapter(List<File> files, int sortBy, OnFileClickListener listener) {
+        this.sortingBy = sortBy;
         this.listener = listener;
+        this.files = sortFiles(files);
+
+
     }
 
     @Override
@@ -33,7 +51,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
         File file = files.get(position);
-        holder.bind(file, listener, position);
+        holder.bind(file, listener);
     }
 
     @Override
@@ -41,25 +59,29 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return files.size();
     }
 
-    public interface OnItemClickListener {
-        void onItemClick(File item, int position);
-    }
-
     class ViewHolder extends RecyclerView.ViewHolder {
-        public FileItemClickListener listener;
+        public OnFileClickListener listener;
         private TextView file_name;
-
+        private TextView file_size;
+        private TextView file_date;
         public ViewHolder(View itemView) {
             super(itemView);
             file_name = (TextView) itemView.findViewById(R.id.filename);
+            file_size = (TextView) itemView.findViewById(R.id.filesize);
+            file_date = (TextView) itemView.findViewById(R.id.filedate);
         }
 
-        public void bind(final File file, final OnItemClickListener listener, final int position) {
+        public void bind(final File file, final OnFileClickListener listener) {
+
+            String dateText = df.format(file.lastModified());
             file_name.setText(file.getName());
+            float filesize = file.length()/1024;
+            file_size.setText(filesize + "kb");
+            file_date.setText(dateText);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onItemClick(file, position);
+                    listener.onFileClick(file);
                 }
             });
         }
@@ -67,7 +89,56 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     }
 
+    private List<File> sortFiles(List<File> files){
+        List<File> sortedList = new ArrayList<>(files.size());
+        List<File> dir = new ArrayList<>();
+        List<File> notDir = new ArrayList<>();
 
-}
+        for(File f: files){
+            if(f.isDirectory()){
+                dir.add(f);
+            }else{
+                notDir.add(f);
+            }
+        }
+        //folders always by name
+        Collections.sort(dir, new Comparator<File>() {
+            @Override
+            public int compare(File lhs, File rhs){
+                return lhs.getName().toLowerCase().compareTo(rhs.getName().toLowerCase());
+            }
+        });
+
+        //then sort files
+        if(sortingBy == BY_NAME){
+        Collections.sort(notDir, new Comparator<File>() {
+            @Override
+            public int compare(File lhs, File rhs){
+                return lhs.getName().toLowerCase().compareTo(rhs.getName().toLowerCase());
+            }
+        });
+    } else if(sortingBy == BY_SIZE){
+            Collections.sort(notDir, new Comparator<File>() {
+                @Override
+                public int compare(File lhs, File rhs) {
+                    return Long.compare(lhs.length(), rhs.length());
+                }});
+        }  else if(sortingBy == BY_DATE){
+            Collections.sort(notDir, new Comparator<File>() {
+                @Override
+                public int compare(File lhs, File rhs) {
+                    return Long.compare(lhs.lastModified(), rhs.lastModified());
+                }});
+        }
+
+        sortedList.addAll(dir);
+        sortedList.addAll(notDir);
+
+        return sortedList;
+    }
+
+
+    }
+
 
 

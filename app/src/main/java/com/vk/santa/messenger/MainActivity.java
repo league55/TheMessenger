@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button choose_file_btn;
+    private Button vkAPI;
     private TextView file_path_tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         choose_file_btn = (Button) findViewById(R.id.choose_file_btn);
+        vkAPI = (Button) findViewById(R.id.vk);
         file_path_tv = (TextView) findViewById(R.id.file_path_tv);
 
         choose_file_btn.setOnClickListener(this);
+        vkAPI.setOnClickListener(this);
     }
 
 
@@ -55,6 +58,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.i("MAIN","CHOOSE_FILE_BTN clicked");
                 Intent intent = new Intent(this,FilePickerActivity.class);
                 startActivityForResult(intent,1);
+                break;
+            case R.id.vk:
+                Log.i("MAIN","VK_API_BTN clicked");
+                Intent intent2 = new Intent(this, VKGetRequestActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

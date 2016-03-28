@@ -3,6 +3,8 @@
     package="com.vk.santa.messenger">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -30,6 +31,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.vk.santa.messenger.MainActivity" />
         </activity>
+        <activity
+            android:name=".VKAPI"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VKGetRequestActivity"
+            android:label="@string/title_activity_vkget_request"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

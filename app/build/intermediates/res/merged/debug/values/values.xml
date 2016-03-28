@@ -30,7 +30,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#CE7345</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
@@ -275,11 +275,14 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_activity_file_picker">FilePickerActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_vkget_request">VKGetRequestActivity</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
