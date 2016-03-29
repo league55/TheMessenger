@@ -100,10 +100,6 @@
         "source": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/layout/activity_main2.xml",
-        "source": "/home/mixmax/AndroidStudioProjects/messenger/app/src/main/res/layout/activity_main2.xml"
-    },
-    {
         "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
         "source": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
     },
@@ -126,10 +122,6 @@
     {
         "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
-        "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/layout/content_main2.xml",
-        "source": "/home/mixmax/AndroidStudioProjects/messenger/app/src/main/res/layout/content_main2.xml"
     },
     {
         "merged": "/home/mixmax/AndroidStudioProjects/messenger/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",

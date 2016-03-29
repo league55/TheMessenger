@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.vk.santa.messenger.MainActivity"
+            android:name="com.vk.santa.messenger.activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
@@ -29,20 +29,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.vk.santa.messenger.FilePickerActivity"
+            android:name="com.vk.santa.messenger.activities.FilePickerActivity"
             android:label="@string/title_activity_file_picker"
-            android:parentActivityName="com.vk.santa.messenger.MainActivity"
+            android:parentActivityName="com.vk.santa.messenger.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.vk.santa.messenger.MainActivity" />
+                android:value=".activities.MainActivity" />
         </activity>
         <activity
-            android:name="com.vk.santa.messenger.VKAPI"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.vk.santa.messenger.VKGetRequestActivity"
+            android:name="com.vk.santa.messenger.activities.VKGetRequestActivity"
             android:label="@string/title_activity_vkget_request"
             android:theme="@style/AppTheme" />
     </application>
