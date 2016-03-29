@@ -13,8 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.ToggleButton;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -23,19 +21,19 @@ import java.util.List;
 
 
 public class FilePickerActivityFragment extends Fragment  {
+    public static int sortType = RecyclerViewAdapter.BY_NAME;
+    public static String newFolderPath;
+    File file;
+    Activity activity;
     private OnFragmentChangeListener mListener;
     private List<String> file_names;
     private String path = Environment.getExternalStorageDirectory().toString();
     private String DIR;
     private RecyclerView files_recycler_view;
-    File file;
     private List<File> files;
     private RecyclerViewAdapter adapter;
-    public static int sortType = RecyclerViewAdapter.BY_NAME;
-    public static String newFolderPath;
     private OnFileClickListener ofc;
     private Button button;
-    Activity activity;
 
     public FilePickerActivityFragment() {
     }
@@ -56,7 +54,7 @@ public class FilePickerActivityFragment extends Fragment  {
             Log.i("FP onCreate", "getArgs" + "not null");
         }
         DIR = getDirName(path);
-        activity = (FilePickerActivity) getActivity();
+        activity = getActivity();
         if (mListener == null) mListener = (OnFragmentChangeListener) activity;
         setFileNames();
     }
@@ -66,13 +64,12 @@ public class FilePickerActivityFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_file_picker, container, false);
 
-
-        button = (Button) ((FilePickerActivity) getActivity()).findViewById(R.id.sort_button);
+        button = (Button) getActivity().findViewById(R.id.sort_button);
 
         if (mListener != null) mListener.onFragmentChange(DIR);
 
         files_recycler_view = (RecyclerView) view.findViewById(R.id.files_recycler);
-        this.adapter = new RecyclerViewAdapter(files, sortType, new OnFileClickListener() {
+        this.adapter = new RecyclerViewAdapter(files, getActivity(), sortType, new OnFileClickListener() {
             @Override
             public void onFileClick(File file) {
                 if (!file.isDirectory()) {
@@ -123,7 +120,7 @@ public class FilePickerActivityFragment extends Fragment  {
                         };
 
 
-                adapter = new RecyclerViewAdapter(files, sortType, ofc);
+                adapter = new RecyclerViewAdapter(files, getActivity(), sortType, ofc);
 
 
 
@@ -141,17 +138,12 @@ public class FilePickerActivityFragment extends Fragment  {
         return  view;
     }
 
-
-    public interface OnFragmentChangeListener {
-        public void onFragmentChange(String title);
-    }
-
-    private List<String> setFileNames(){
+    private List<String> setFileNames() {
         Log.i("File picker", "Path" + path);
         file = new File(path);
         files = new ArrayList<File>(Arrays.asList(file.listFiles()));
         file_names = new ArrayList<>(files.size());
-        for(File f: files){
+        for (File f : files) {
             file_names.add(f.getName());
         }
         return file_names;
@@ -174,5 +166,9 @@ public class FilePickerActivityFragment extends Fragment  {
                 return RecyclerViewAdapter.BY_NAME;
 
         }
+    }
+
+    public interface OnFragmentChangeListener {
+        void onFragmentChange(String title);
     }
 }
