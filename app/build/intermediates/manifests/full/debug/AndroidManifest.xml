@@ -32,7 +32,8 @@
             android:name="com.vk.santa.messenger.activities.FilePickerActivity"
             android:label="@string/title_activity_file_picker"
             android:parentActivityName="com.vk.santa.messenger.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />

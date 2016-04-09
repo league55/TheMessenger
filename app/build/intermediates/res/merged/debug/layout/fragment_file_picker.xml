@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/files_recycler"
+        android:id="@+id/folder_content_files"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

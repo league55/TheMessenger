@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-        <include layout="@layout/toolbar" />
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/multi_files_layout" />
+
 
     <RelativeLayout
-    android:id="@+id/file_picker_relative_l"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:id="@+id/multi_files_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/added_files_recycler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:textOff="▼"
+            android:textOn="▲"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/togglebutton_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <ToggleButton
+            android:id="@+id/button_files"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textOff="▼"
+            android:textOn="▲"
+            android:visibility="visible" />
+    </RelativeLayout>
 
 
 </RelativeLayout>
-</LinearLayout>

@@ -7,4 +7,11 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <group android:id="@+id/groupVsbl">
+        <item
+            android:id="@+id/item2"
+            android:icon="@android:drawable/ic_menu_call"
+            android:showAsAction="always|withText"
+            android:title="title"></item>
+    </group>
 </menu>

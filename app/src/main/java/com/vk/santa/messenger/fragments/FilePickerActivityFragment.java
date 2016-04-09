@@ -1,6 +1,5 @@
 package com.vk.santa.messenger.fragments;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -10,13 +9,16 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.vk.santa.messenger.OnFileClickListener;
 import com.vk.santa.messenger.R;
-import com.vk.santa.messenger.adapters.RecyclerViewAdapter;
+import com.vk.santa.messenger.activities.FilePickerActivity;
+import com.vk.santa.messenger.adapters.FilesListRecyclerAdapter;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -25,24 +27,22 @@ import java.util.List;
 
 
 public class FilePickerActivityFragment extends Fragment  {
-    public static int sortType = RecyclerViewAdapter.BY_NAME;
+    public static int sortType = FilesListRecyclerAdapter.BY_NAME;
     public static String newFolderPath;
-
-    private Activity activity;
-    private Button button;
+    private FilePickerActivity activity;
 
     private File file;
     private List<File> files;
     private RecyclerView files_recycler_view;
 
-    private RecyclerViewAdapter adapter;
+    private FilesListRecyclerAdapter adapter;
 
     private List<String> file_names;
     private String path = Environment.getExternalStorageDirectory().toString();
     private String DIR;
 
-    private OnFileClickListener ofc;
-    private OnFragmentChangeListener mListener;
+    private OnFileClickListener onFileClickListener;
+    private OnFragmentChangeListener onFragmentChangeListener;
 
     public FilePickerActivityFragment() {
     }
@@ -58,80 +58,164 @@ public class FilePickerActivityFragment extends Fragment  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(getArguments() != null && getArguments().getString("newPath", path) != null) {
+        setHasOptionsMenu(true);
+        if (getArguments() != null && getArguments().getString("newPath", path) != null)
             path = getArguments().getString("newPath", path);
-            Log.i("FP onCreate", "getArgs" + "not null");
-        }
         DIR = getDirName(path);
-        activity = getActivity();
-        if (mListener == null) mListener = (OnFragmentChangeListener) activity;
+        activity = (FilePickerActivity) getActivity();
+        if (onFragmentChangeListener == null) onFragmentChangeListener = activity;
         setFileNames();
+        if (onFragmentChangeListener != null) onFragmentChangeListener.onFragmentChange(DIR);
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+
         View view = inflater.inflate(R.layout.fragment_file_picker, container, false);
 
-        button = (Button) getActivity().findViewById(R.id.sort_button);
-
-        if (mListener != null) mListener.onFragmentChange(DIR);
-
-        files_recycler_view = (RecyclerView) view.findViewById(R.id.files_recycler);
-        this.adapter = new RecyclerViewAdapter(files, getActivity(), sortType, new OnFileClickListener() {
+        files_recycler_view = (RecyclerView) view.findViewById(R.id.folder_content_files);
+        this.adapter = new FilesListRecyclerAdapter(files, activity, sortType, new OnFileClickListener() {
             @Override
-            public void onFileClick(File file) {
-                if (!file.isDirectory()) {
-                    Intent intent = new Intent();
-                    intent.putExtra("filePath", file.getAbsolutePath());
-                    getActivity().setResult(getActivity().RESULT_OK, intent);
-                    getActivity().finish();
+            public void onFileClick(File file, boolean isLongClick, View item) {
+                activity.setMultiSelectionMode(isLongClick);
+                if (FilePickerActivity.multiselect_mode && FilePickerActivity.addedFilesList.contains(file)) {
+                    Log.i("REMOVED", FilePickerActivity.addedFilesList.remove(file) + "");
+                    item.setSelected(false);
+                } else if (!file.isDirectory() && !FilePickerActivity.multiselect_mode) {
+                    FilePickerActivity.addedFilesList.add(file);
+                    finishActivity(FilePickerActivity.addedFilesList);
+                } else if (!file.isDirectory() && isLongClick) {
+                    FilePickerActivity.addedFilesList.add(file);
                 } else {
-                    mListener.onFragmentChange(DIR);
                     newFolderPath = file.getAbsolutePath();
-                    Log.i("File picker", "Path" + newFolderPath);
-                    FragmentManager fm = getActivity().getSupportFragmentManager();
-                    Fragment fragment = newInstance(newFolderPath);
-
-                    fm.beginTransaction()
-                            .addToBackStack("zero")
-                            .replace(R.id.file_picker_relative_l, fragment)
-                            .commit();
-
+                    stepIntoChildFolder(newFolderPath);
                 }
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sortType = changeButtonState(sortType);
-                mListener.onFragmentChange(DIR);
-                Log.i("TAG", "SWAG-----");
-                ofc = new OnFileClickListener() {
-                    @Override
-                    public void onFileClick(File item) {
-                                Log.i("TAG", "SWAG-----");
-                                newFolderPath = path;
-                                Log.i("File picker", "Path" + newFolderPath);
-                                FragmentManager fm = getActivity().getSupportFragmentManager();
-                                Fragment fragment = newInstance(newFolderPath);
-                                fm.popBackStack();
-                                fm.beginTransaction()
-                                        .addToBackStack("one")
-                                        .replace(R.id.file_picker_relative_l, fragment)
-                                        .commit();
-                            }
-                        };
-                adapter = new RecyclerViewAdapter(files, getActivity(), sortType, ofc);
-               ofc.onFileClick(file);
-            }
-        });
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(activity);
         files_recycler_view.setLayoutManager(layoutManager);
         files_recycler_view.setAdapter(adapter);
         return  view;
+    }
+
+    private void stepIntoChildFolder(String newFolderPath) {
+        onFragmentChangeListener.onFragmentChange(DIR);
+        Log.i("File picker", "Path" + newFolderPath);
+        FragmentManager fm = activity.getSupportFragmentManager();
+        Fragment fragment = newInstance(newFolderPath);
+
+        fm.beginTransaction()
+                .addToBackStack(null)
+                .replace(R.id.file_picker_relative_l, fragment)
+                .commit();
+
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_main, menu);
+
+        menu.setGroupVisible(R.id.groupVsbl, FilePickerActivity.multiselect_mode);
+        menu.add(0, FilePickerActivity.SORT_MENU_ITEM, 0, "sort")
+                .setIcon(getNextIcon())
+                .setShowAsAction(
+                        MenuItem.SHOW_AS_ACTION_ALWAYS
+                                | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+
+        if (FilePickerActivity.multiselect_mode) {
+            menu.add(1, FilePickerActivity.RETURN_PATHES_ITEM, 1, "confirm")
+                    .setIcon(android.R.drawable.ic_menu_send)
+                    .setShowAsAction(
+                            MenuItem.SHOW_AS_ACTION_ALWAYS
+                                    | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+            menu.add(0, FilePickerActivity.CANCEL_ITEM, 0, "cancel")
+                    .setIcon(android.R.drawable.ic_menu_close_clear_cancel)
+                    .setShowAsAction(
+                            MenuItem.SHOW_AS_ACTION_ALWAYS
+                                    | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+        } else {
+
+        }
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    private int getNextIcon() {
+        switch (sortType) {
+            case FilesListRecyclerAdapter.BY_NAME:
+                return android.R.drawable.ic_menu_sort_alphabetically;
+            case FilesListRecyclerAdapter.BY_SIZE:
+                return R.drawable.ic_weight;
+            case FilesListRecyclerAdapter.BY_DATE:
+                return R.drawable.ic_date;
+            default:
+                return android.R.drawable.ic_menu_sort_alphabetically;
+
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Log.i("ITEM", "-------" + item.getItemId() + " " + item.getTitle());
+        switch (item.getItemId()) {
+            case FilePickerActivity.SORT_MENU_ITEM:
+                getNextSortType(100);
+                changeSorting();
+                break;
+            case FilePickerActivity.RETURN_PATHES_ITEM:
+                finishActivity(FilePickerActivity.addedFilesList);
+                activity.setMultiSelectionMode(false);
+                break;
+            case FilePickerActivity.CANCEL_ITEM:
+                activity.setMultiSelectionMode(false);
+                FilePickerActivity.addedFilesList = new ArrayList<>();
+                updateFragment(path);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void changeSorting() {
+        sortType = getNextSortType(sortType);
+        onFragmentChangeListener.onFragmentChange(DIR);
+        onFileClickListener = new OnFileClickListener() {
+            @Override
+            public void onFileClick(File file, boolean b, View item) {
+                newFolderPath = path;
+                updateFragment(newFolderPath);
+            }
+        };
+        adapter = new FilesListRecyclerAdapter(files, getActivity(), sortType, onFileClickListener);
+        onFileClickListener.onFileClick(file, false, null);
+
+    }
+
+    private void updateFragment(String path) {
+        Log.i("File picker", "Path" + path);
+        FragmentManager fm = activity.getSupportFragmentManager();
+        Fragment fragment = newInstance(path);
+
+        fm.beginTransaction()
+                .addToBackStack("one")
+                .replace(R.id.file_picker_relative_l, fragment)
+                .commit();
+        fm.popBackStack();
+    }
+
+    private void finishActivity(ArrayList<File> files) {
+        Intent intent = new Intent();
+        ArrayList<String> filePathes = new ArrayList<>();
+        for (File f : files) {
+            filePathes.add(f.getAbsolutePath());
+        }
+
+        intent.putExtra("filePathes", filePathes);
+        activity.setResult(getActivity().RESULT_OK, intent);
+        activity.finish();
+
+        FilePickerActivity.addedFilesList = new ArrayList<>();
     }
 
     private List<String> setFileNames() {
@@ -150,16 +234,16 @@ public class FilePickerActivityFragment extends Fragment  {
         return arr[arr.length-1];
     }
 
-    private int changeButtonState(int oldState){
-        switch(oldState){
-            case RecyclerViewAdapter.BY_NAME: button.setText("size");
-                return RecyclerViewAdapter.BY_SIZE;
-            case RecyclerViewAdapter.BY_SIZE: button.setText("date");
-                return RecyclerViewAdapter.BY_DATE;
-            case RecyclerViewAdapter.BY_DATE: button.setText("name");
-                return RecyclerViewAdapter.BY_NAME;
-            default:                          button.setText("name");
-                return RecyclerViewAdapter.BY_NAME;
+    private int getNextSortType(int oldType) {
+        switch (oldType) {
+            case FilesListRecyclerAdapter.BY_NAME:
+                return FilesListRecyclerAdapter.BY_SIZE;
+            case FilesListRecyclerAdapter.BY_SIZE:
+                return FilesListRecyclerAdapter.BY_DATE;
+            case FilesListRecyclerAdapter.BY_DATE:
+                return FilesListRecyclerAdapter.BY_NAME;
+            default:
+                return FilesListRecyclerAdapter.BY_NAME;
 
         }
     }

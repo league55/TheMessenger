@@ -33,13 +33,15 @@
             android:text="File" />
 
         <Button
+            android:id="@+id/vk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="vkAPI"
-            android:id="@+id/vk"
-            android:layout_below="@+id/choose_file_btn"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/choose_file_btn"
+            android:text="vkAPI" />
+
+
     </RelativeLayout>
 
 </LinearLayout>

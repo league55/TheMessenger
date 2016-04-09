@@ -8,5 +8,5 @@ import java.io.File;
  * Created by mixmax on 26.03.16.
  */
 public interface OnFileClickListener {
-    void onFileClick(File item);
+    void onFileClick(File file, boolean b, View item);
 }

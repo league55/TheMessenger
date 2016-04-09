@@ -7,6 +7,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 
 import com.vk.santa.messenger.OnFileClickListener;
 import com.vk.santa.messenger.R;
+import com.vk.santa.messenger.activities.FilePickerActivity;
 import com.vk.santa.messenger.util.TextDrawable;
 
 import java.io.File;
@@ -27,7 +29,7 @@ import java.util.List;
 /**
  * Created by mixmax on 26.03.16.
  */
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class FilesListRecyclerAdapter extends RecyclerView.Adapter<FilesListRecyclerAdapter.ViewHolder> {
 
     public static final int BY_NAME = 0;
     public static final int BY_SIZE = 1;
@@ -39,7 +41,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private List<File> files;
 
 
-    public RecyclerViewAdapter(List<File> files, Context c, int sortBy, OnFileClickListener listener) {
+    public FilesListRecyclerAdapter(List<File> files, Context c, int sortBy, OnFileClickListener listener) {
         this.sortingBy = sortBy;
         this.listener = listener;
         this.files = sortFiles(files);
@@ -70,15 +72,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public FilesListRecyclerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.filelist_item, parent, false);
+
         final ViewHolder viewHolder = new ViewHolder(v);
 
         return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(RecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(FilesListRecyclerAdapter.ViewHolder holder, int position) {
         File file = files.get(position);
         holder.bind(file, listener);
     }
@@ -138,16 +142,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return sortedList;
     }
 
+
     class ViewHolder extends RecyclerView.ViewHolder {
         private final String FOLDER = "FOLER";
         private final String SYSTEM = "SYSTEM";
         private final String IMAGE = "IMAGE";
         private final String FILE = "FILE";
+        private final View itemView;
         public OnFileClickListener listener;
         private TextView file_name;
         private TextView file_size;
         private TextView file_date;
         private ImageView preview;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -155,22 +162,58 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             file_size = (TextView) itemView.findViewById(R.id.filesize);
             file_date = (TextView) itemView.findViewById(R.id.filedate);
             preview = (ImageView) itemView.findViewById(R.id.file_preview_iv);
+            this.itemView = itemView;
         }
 
         public void bind(final File file, final OnFileClickListener listener) {
+
             String dateText = df.format(file.lastModified());
 
             file_name.setText(getCleanName(file));
             file_size.setText(getFileSize(file));
             file_date.setText(dateText);
-
             preview.setImageDrawable(getIcon(file));
+
+            final View.OnLongClickListener onLongClickListener = new View.OnLongClickListener() {
+                boolean longClick = true;
+
+                @Override
+                public boolean onLongClick(View v) {
+
+                    if (file.isDirectory()) {
+                        itemView.setSelected(false);
+                        listener.onFileClick(file, longClick, itemView);
+                        return false;
+                    } else {
+                        longClick = true;
+                        listener.onFileClick(file, longClick, itemView);
+                        itemView.setSelected(true);
+                        return true;
+                    }
+
+                }
+            };
+            itemView.setOnLongClickListener(onLongClickListener);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onFileClick(file);
+                    boolean unselection = FilePickerActivity.addedFilesList.contains(file);
+                    if (unselection) {
+                        listener.onFileClick(file, true, itemView);
+                    } else if (FilePickerActivity.multiselect_mode) {
+                        onLongClickListener.onLongClick(itemView);
+                    } else listener.onFileClick(file, false, itemView);
                 }
             });
+
+            if (FilePickerActivity.addedFilesList.contains(file)) {
+                itemView.setSelected(true);
+                Log.i("FILE IN LIST", file.getAbsolutePath());
+            } else {
+                itemView.setSelected(false);
+            }
+
         }
 
         private Drawable getIcon(File file) {
@@ -218,7 +261,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
 
         private String getCleanName(File file) {
-            if (file.isDirectory() || file.getName().charAt(0) == '.') return file.getName();
+            if (file.isDirectory() || file.getName().charAt(0) == '.' || !file.getName().contains("."))
+                return file.getName();
             return file.getName().substring(0, file.getName().lastIndexOf("."));
         }
 
@@ -239,6 +283,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             return new BitmapDrawable(context.getResources(), BitmapFactory.decodeFile(file.getAbsolutePath(), options));
 
         }
+
+
     }
 
 

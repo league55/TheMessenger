@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.vk.santa.messenger.R;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button choose_file_btn;
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.choose_file_btn:
                 Log.i("MAIN","CHOOSE_FILE_BTN clicked");
-                Intent intent = new Intent(this,FilePickerActivity.class);
+                Intent intent = new Intent(this, FilePickerActivity.class);
                 startActivityForResult(intent,1);
                 break;
             case R.id.vk:
@@ -73,7 +75,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(data == null){return;}
-        String filePath = data.getStringExtra("filePath");
-        file_path_tv.setText(filePath);
+        ArrayList<String> filePath = data.getStringArrayListExtra("filePathes");
+        StringBuilder sb = new StringBuilder();
+
+        for (String path : filePath) {
+
+            sb.append(path);
+            sb.append("\n");
+        }
+        file_path_tv.setText(sb);
     }
 }
